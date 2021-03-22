@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include <stdbool.h>
-#define MAX 5
+#define MAX 50
 int i;
 int stack[MAX];
 int top=-1;
@@ -49,10 +49,18 @@ int peek()
 {
    printf("%d\n",stack[top]);
 }
+void display()
+{
+	while(isempty()!=0) 
+	{
+      peek();
+      pop();
+   }
+}
 int main()
 {
 	int n,k;
-	printf("Enter the number of elemants inn stack:\n");
+	printf("Enter the number of elemants in stack:\n");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -62,11 +70,7 @@ int main()
 	printf("%d:\n",top);
 	printf("Element at top of the stack:\n");
 	peek();
-	printf("elements of the stack are\n:");
-	while(isempty()!=0) 
-	{
-      //int data = peek();
-      peek();
-      pop();
-   }
+	printf("elements of the stack are:\n");
+	display();
+	
 }
