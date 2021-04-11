@@ -2,57 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Recursive', sans-serif;
+    font-family:'Poppins', sans-serif;;
 }
-.landing img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    opacity: 0.5;
-}
-.landing {
+ 
+ 
+.landing{
     width: 100%;
     height: 100vh;
     background: black;
     position: relative;
 }
-.navbar {
+.landing img{
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0.25;
+}
+.navbar{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 100px;
 }
-.icon{
+.logo{
     text-decoration: none;
     color: white;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 28px ;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;
 }
 .navbar ul li{
     display: inline-block;
-    position: relative;
-    font-size: 25px;
-    cursor: pointer;
+    font-size: 24px;
     padding: 10px;
+    cursor: pointer;
+    position: relative;
 }
 .navbar ul li::after{
-    content: "";
+    content:"";
     width: 0;
     height: 4px;
-    background: rgb(255, 132, 0);
+    background: cyan;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -61,90 +58,85 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
-.content{
+.navbar ul li a{
+    text-decoration: none;
     color: white;
+}
+.content{
     position: absolute;
-    top: 40%;
-    right: 0;
     text-align: center;
-    padding: 0 10%;
     max-width: 100%;
+    top: 40%;
+    color:white;
+    padding: 0 10%;
 }
 .content h2{
-    font-size: 50px;
+    color: rgb(17, 189, 46); 
+    font-size: 60px;
 }
 .content p{
-    padding: 10px ;
     font-size: 20px;
 }
 .aboutus{
     display: flex;
     flex-direction: row;
 }
-.content-about img{
+.content-about,.aboutus img{
     width: 50%;
-    padding: 30px;
 }
-.aboutus{
-    text-align: center;
-    padding: 9%;
+.content-about{
+    background-color: rgb(50, 40, 139);
     color: white;
-    background: rgb(216, 118, 118);
+    text-align: center;
+    padding: 100px;
+}
+.aboutus h2{
+    color:  rgb(255, 209, 2);
+    font-size: 30px;
+    margin: 10px 0;
+}
+.aboutus p{
+   font-size: 16px;
 }
 .domains{
-    background: rgb(90, 30, 102);
+    background: rgb(29,29,70);
     color: white;
+    
+    padding: 100px;
     text-align: center;
-    padding: 50px 100px;
-}
-.domains h2{
-    font-size: 30px;
-}
-.domains p{
-    padding-top: 20px ;
-    font-size: 15px;
 }
 .container{
-    width: 100%;
+    width: 80%;
     margin: 40px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
-.card:hover{
+.card{
+    background: rgb(21, 214, 205);
+    color: black;
     border: 2px solid white;
     border-radius: 20px;
     margin: 30px;
-    padding: 20px;
-    width: 100%;
-    transition: 0.4s ease;
-}
-.card{
-    background: black;
-    opacity: 0.5;
+    padding: 10px 0;
 }
 .card img{
-    padding: 100px;
-    width: 200px;
-    height: 250px;
+    width: 100%;
+    height: 220px;
 }
-.card h2{
-    font-size: 25px;
-    padding-bottom: 20px;
+.card h3{
+    padding: 10px;
+    padding-top: 0;
 }
 .contact{
-    background: rgb(0, 255, 179);
-    padding: 50px 100px;
+    background: rgb(96, 96, 228);
+    padding: 100px;
     text-align: center;
-    color: black;
-}
-.contact h2{
-    padding-bottom: 10px;
+    color: white;
 }
 .contact-div{
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: 50px auto;
 }
 .contact-div img{
@@ -154,35 +146,32 @@ form{
     width: 50%;
     display: flex;
     flex-direction: column;
-    background: transparent;
+    background: cyan;
     padding: 50px;
 }
-form input,form textarea{
+form input, form textarea{
     margin: 10px 0;
-    background:  rgb(0, 255, 179);
-    padding: 6px;
+    background: cyan;
+    padding: 5px;
     border: none;
-    border-bottom:2px solid white;
-    color: white;
-    font-size: 13px;
-    outline: none;
+    border-bottom: 2px solid white;
+    color: black;
+    font-size: 14px;
+
 }
 form button{
-    border: 2px solid rgb(0, 255, 179);
-    border-radius: 8px;
+    border: 2px solid white;
+    border-radius: 10px;
     outline: none;
-    background: white;
-    margin-left: auto;
+    background: cyan;
     padding: 7px 15px;
+    margin-left: auto;
     cursor: pointer;
-    color: rgb(0, 255, 179);
-    font-size: 17px;
-    font-weight: 1000;
-    transition: ease;
+    transition: 0.4s ease;
 }
 form button:hover{
-    background: rgb(0, 255, 179);
-    color: white;
+    background: white;
+    color: cyan;
 }
 .footer{
     background: black;
@@ -190,62 +179,53 @@ form button:hover{
     text-align: center;
     padding: 20px 15%;
 }
-@media only screen and (max-width:900px){
+
+@media only screen and (max-width: 600px){
     .navbar ul{
         display: none;
     }
     .navbar a{
         margin: 0 auto;
     }
-    .landing img{
-        min-width: max-content;
-        opacity: 0.2;
-    }
-   
     .content{
-        top:30%
+        top: 20%;
     }
     .content h2{
-        font-size: 30px;
-        font-weight: 700;
-        margin: 25px;
-    
+        font-size: 36px;
+        margin-bottom: 20px;
     }
     .content p{
-        padding: 20px ;
-        font-size: 15px;
+        font-size: 18px;
     }
     .aboutus{
         flex-direction: column;
+        
     }
-    .aboutus img, .about{
+    .content-about, .aboutus img{
         width: 100%;
     }
-    .about{
-        padding: 20px;
-        font-size: 14px;
+    .content-about{
+        padding: 10px;
     }
-    .domain{
+    .domains{
         padding: 15px;
+
     }
     .container{
         flex-direction: column;
     }
-    .cards{
+    .card{
         margin: 10px;
         margin-bottom: 20px;
-    }
-    .cards img{
-        height:100px;
-        width: 100px;
+
     }
     .contact{
         padding: 15px;
     }
-    .contactus{
+    .contact-div{
         flex-direction: column;
     }
-    .contactus img, form{
+    .contact-div img, form{
         width: 100%;
     }
 

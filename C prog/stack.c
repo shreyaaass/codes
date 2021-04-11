@@ -60,14 +60,25 @@ void display()
 int main()
 {
 	int n,k;
-	printf("Enter the number of elemants in stack:\n");
-	scanf("%d",&n);
-	for(i=0;i<n;i++)
-	{
-		scanf("%d",&k);
-		push(k);
-	}
-	printf("%d:\n",top);
+//	PART A OF THE QUESTION(INSERTING AN ELEMENT)
+	push(21);
+	push(34);
+	push(25);
+	push(68);
+	push(8);
+//	PART B OF THE QUESTION(DELETING AN ELEMENT)
+	pop();
+	pop();
+//	PART C OF THE QUESTION(CHECKING WHETHER THE STACK IS FULL)
+	if (isfull()==0)
+		printf("Stack is Full\n");
+	else
+	printf("Stack is not full\n");
+//	PART D OF THE QUESTION(CHECKING WHETHER THE STACK IS EMPTY)
+	if (isempty()==0)
+		printf("Stack is empty\n");
+	else
+	printf("Stack is not empty\n");
 	printf("Element at top of the stack:\n");
 	peek();
 	printf("elements of the stack are:\n");

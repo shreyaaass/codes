@@ -52,20 +52,18 @@ int peek()
 int main()
 {
 	int n,k;
-	printf("Enter the number of elemants inn stack:\n");
-	scanf("%d",&n);
-	for(i=0;i<n;i++)
-	{
-		scanf("%d",&k);
-		push(k);
-	}
-	printf("%d:\n",top);
+	//Part A of the question (inserting elements):
+	push(21);
+	push(34);
+	push(45);
+	//Part B of the question(delete an element):
+	pop();
+	printf("Part A of the question (inserting elements):\n");
 	printf("Element at top of the stack:\n");
 	peek();
 	printf("elements of the stack are\n:");
 	while(isempty()!=0) 
 	{
-      //int data = peek();
       peek();
       pop();
    }
