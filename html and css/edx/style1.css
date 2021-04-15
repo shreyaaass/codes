@@ -1,81 +1,80 @@
-body{
-    background-color: rgb(14, 4, 6);
+body {
+  background-color: rgb(14, 4, 6);
 }
-.Name h1{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgba(151, 25, 25, 0.918);
-    background-color: black;
-    margin: 20px;
-    text-align: center;
-    padding: 10px;
+.Name h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgba(151, 25, 25, 0.918);
+  background-color: black;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
 }
-.Name h2{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 700;
-    text-align: center;
-    background-color: #F5B513;
-    padding: 20px;
-    margin-top: 12px;
-    color: red;
+.Name h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f5b513;
+  padding: 20px;
+  margin-top: 12px;
+  color: red;
 }
-.Name p{
-    border: rgb(123, 66, 177) solid;
-    border-style:dashed;
-    border-radius: 200px;
-    padding: 20px;
-    font-family:cursive;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 700;
-    margin-left: 500px;
-    margin-right: 500px;
-    color:red;
+.Name p {
+  border: rgb(123, 66, 177) solid;
+  border-style: dashed;
+  border-radius: 200px;
+  padding: 20px;
+  font-family: cursive;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: red;
 }
-.Food h2{
-background-color:chocolate;
-padding: 10px;
-text-align: center;
-font-family: monospace;
-font-style: italic;
-color: red;
+.Food h2 {
+  background-color: chocolate;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-style: italic;
+  color: red;
 }
-.Food p{
-    text-align:center;
-    border: #bd0cd4 dashed;
-    padding: 20px;
-    font-size: 18px;
-    margin-right: 150px;
-    margin-left: 150px;
-    color: rgb(13, 197, 22);
+.Food p {
+  text-align: center;
+  border: #bd0cd4 dashed;
+  padding: 20px;
+  font-size: 18px;
+  margin-right: 150px;
+  margin-left: 150px;
+  color: rgb(13, 197, 22);
 }
-button{
-    padding: 12px;
-    background-color: brown;
-    color: antiquewhite;
-    border-radius: 10px;
-    font-style: italic;
-    font-size: 15px;
-    margin-top: 80px;
-    text-align: center;
-    
+button {
+  padding: 12px;
+  background-color: brown;
+  color: antiquewhite;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 80px;
+  text-align: center;
 }
-.Web
-{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: brown;
+.Web {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: brown;
 }
-.Web ul{
-    margin-left: 100px;
-    margin-right: 100px;
-    border: #bd0cd4;
-    border-radius: 40px;
-    border-style: groove;
+.Web ul {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: #bd0cd4;
+  border-radius: 40px;
+  border-style: groove;
 }
-.web a:link{
-    color:blanchedalmond;
+.web a:link {
+  color: blanchedalmond;
 }
-li :hover:link{
-color: aliceblue;
+li :hover:link {
+  color: aliceblue;
 }
