@@ -154,7 +154,7 @@ body .about-image {
 }
 
 body .about-image {
-  background-image: url(https://images.pexels.com/photos/904276/pexels-photo-904276.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-image: url(https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,6 +179,7 @@ body .blogs {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 100vh;
 }
 
 body .blog {
@@ -288,12 +289,14 @@ body .card01 {
 body .card1__content {
   text-align: center;
   position: relative;
-  padding: 5em;
+  padding: 7em;
   -webkit-transition: -webkit-transform 3s;
   transition: -webkit-transform 3s;
   transition: transform 3s;
   transition: transform 3s, -webkit-transform 3s;
-  background-color: #27b6b6;
+  background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-size: cover;
+  background-position: center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -306,6 +309,16 @@ body .card1__back {
   left: 0;
   right: 0;
   padding: 2em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-rows: 1fr 0.3fr;
+      grid-template-rows: 1fr 0.3fr;
 }
 
 body .card01:hover .card1__content {
@@ -315,12 +328,50 @@ body .card01:hover .card1__content {
 
 body .card1__title {
   font-size: 3rem;
-  -webkit-transform: translateZ(80px);
-          transform: translateZ(80px);
+  -webkit-transform: translateZ(6rem);
+          transform: translateZ(6rem);
+}
+
+body .Intro {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 body .card1__back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  background: #333333;
+  background: radial-gradient(circle, #333333 0%, #041907 100%);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .card1__body {
+  -webkit-transform: translateZ(3rem);
+          transform: translateZ(3rem);
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+body .card1__front p {
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+}
+
+body .card1__back img,
+body .card1__back img a,
+body p {
+  height: 30px;
+  -webkit-transform: translateZ(3rem);
+          transform: translateZ(3rem);
+  padding: 3px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+body .cards h1 {
+  font-size: 4rem;
 }
 /*# sourceMappingURL=pro3.css.map */

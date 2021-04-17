@@ -108,7 +108,7 @@ body {
     grid-column: 2/3;
   }
   .about-image {
-    background-image: url(https://images.pexels.com/photos/904276/pexels-photo-904276.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-image: url(https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,6 +126,7 @@ body {
     gap: 1.5rem;
     padding: 3rem;
     justify-content: center;
+    min-height: 100vh;
   }
   .blog {
     background-color: white;
@@ -196,9 +197,11 @@ body {
   .card1__content {
     text-align: center;
     position: relative;
-    padding: 5em;
+    padding: 7em;
     transition: transform 3s;
-    background-color: rgb(39, 182, 182);
+    background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center;
     transform-style: preserve-3d;
   }
   .card1__front,
@@ -209,15 +212,57 @@ body {
     left: 0;
     right: 0;
     padding: 2em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    //flex-direction: column;
+    display: grid;
+    align-content: center;
+    grid-template-rows: 1fr 0.3fr;
   }
   .card01:hover .card1__content {
     transform: rotateY(0.5turn);
   }
   .card1__title {
     font-size: 3rem;
-    transform: translateZ(80px);
+    transform: translateZ(6rem);
+  }
+  .Intro {
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   .card1__back {
     transform: rotateY(180deg);
+    background: rgb(51, 51, 51);
+    background: radial-gradient(
+      circle,
+      rgba(51, 51, 51, 1) 0%,
+      rgba(4, 25, 7, 1) 100%
+    );
+    transform-style: preserve-3d;
+  }
+  .card1__body {
+    transform: translateZ(3rem);
+    grid-row: 1/2;
+    //transform-style: preserve-3d;
+  }
+  .card1__front p {
+    transform: translateZ(60px);
+  }
+  .card1__back img,
+  .card1__back img a,
+  p {
+    height: 30px;
+    //position: relative;
+    //bottom: -30px;
+    transform: translateZ(3rem);
+    //transform-style: preserve-3d;
+    padding: 3px;
+    grid-row: 2/3;
+  }
+  .cards h1 {
+    font-size: 4rem;
   }
 }
