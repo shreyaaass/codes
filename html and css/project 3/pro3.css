@@ -273,4 +273,54 @@ body .behind {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
+
+body .cards {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+body .card01 {
+  width: 400px;
+}
+
+body .card1__content {
+  text-align: center;
+  position: relative;
+  padding: 5em;
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+  background-color: #27b6b6;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .card1__front,
+body .card1__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+}
+
+body .card01:hover .card1__content {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+
+body .card1__title {
+  font-size: 3rem;
+  -webkit-transform: translateZ(80px);
+          transform: translateZ(80px);
+}
+
+body .card1__back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
 /*# sourceMappingURL=pro3.css.map */

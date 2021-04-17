@@ -185,4 +185,39 @@ body {
     position: absolute;
     transform-style: preserve-3d;
   }
+  .cards {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .card01 {
+    width: 400px;
+  }
+  .card1__content {
+    text-align: center;
+    position: relative;
+    padding: 5em;
+    transition: transform 3s;
+    background-color: rgb(39, 182, 182);
+    transform-style: preserve-3d;
+  }
+  .card1__front,
+  .card1__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+  }
+  .card01:hover .card1__content {
+    transform: rotateY(0.5turn);
+  }
+  .card1__title {
+    font-size: 3rem;
+    transform: translateZ(80px);
+  }
+  .card1__back {
+    transform: rotateY(180deg);
+  }
 }
