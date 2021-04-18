@@ -21,7 +21,7 @@ body .title {
   font-family: "Zen Dots", cursive;
 }
 
-body .landing {
+body #landing {
   background-image: url(https://images.pexels.com/photos/3838850/pexels-photo-3838850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   background-repeat: no-repeat;
@@ -112,11 +112,11 @@ body .card__readmore {
   font-weight: 800;
 }
 
-body .about {
-  height: 100vh;
+body #about {
+  min-height: 100vh;
 }
 
-body .about h1 {
+body #about h1 {
   text-align: center;
   font-size: 2.5rem;
   background-color: #000;
@@ -172,8 +172,16 @@ body .blogs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (minmax(200px, auto))[3];
+      grid-template-rows: repeat(3, minmax(200px, auto));
   gap: 1.5rem;
   padding: 3rem;
   -webkit-box-pack: center;
@@ -275,7 +283,7 @@ body .behind {
           transform-style: preserve-3d;
 }
 
-body .cards {
+body #cards {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -371,7 +379,14 @@ body p {
   grid-row: 2/3;
 }
 
-body .cards h1 {
+body #cards h1 {
   font-size: 4rem;
+}
+
+body .icons img:hover {
+  -webkit-box-shadow: rgba(32, 31, 31, 0.37);
+          box-shadow: rgba(32, 31, 31, 0.37);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=pro3.css.map */
