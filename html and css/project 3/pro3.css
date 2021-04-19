@@ -13,7 +13,7 @@ body {
   color: white;
 }
 
-body .title {
+.title {
   color: #ffffff;
   font-size: 55px;
   position: relative;
@@ -21,7 +21,7 @@ body .title {
   font-family: "Zen Dots", cursive;
 }
 
-body #landing {
+#landing {
   background-image: url(https://images.pexels.com/photos/3838850/pexels-photo-3838850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body #landing {
   overflow: hidden;
 }
 
-body .navbar {
+.navbar {
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,33 +52,37 @@ body .navbar {
           align-items: center;
   background-color: black;
   padding: 10px;
+  min-height: 8vh;
 }
 
-body li,
-body a {
+li,
+a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
 
-body .items li {
+.navlinks li {
   display: inline-block;
+}
+
+.navlinks li {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 20px;
   font-size: 1.2rem;
 }
 
-body .items li:hover {
+.navlinks li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body .logo {
+.logo {
   font-size: 1.5rem;
 }
 
-body .navbar button {
+.navbar button {
   border: 3px solid white;
   padding: 9px;
   background-color: transparent;
@@ -99,7 +103,7 @@ body .navbar button {
   right: 50px;
 }
 
-body .navbar button:hover {
+.navbar button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-color: white;
@@ -107,16 +111,27 @@ body .navbar button:hover {
   font-weight: 900;
 }
 
-body .card__readmore {
+.burger .line {
+  background-color: #ffffff;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+.burger {
+  display: none;
+}
+
+.card__readmore {
   text-decoration: underline;
   font-weight: 800;
 }
 
-body #about {
+#about {
   min-height: 100vh;
 }
 
-body #about h1 {
+#about h1 {
   text-align: center;
   font-size: 2.5rem;
   background-color: #000;
@@ -124,7 +139,7 @@ body #about h1 {
   margin: 1rem 0;
 }
 
-body .about-grid-container {
+.about-grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -134,7 +149,7 @@ body .about-grid-container {
   grid-gap: 1rem;
 }
 
-body .aboutme-content {
+.aboutme-content {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -147,13 +162,13 @@ body .aboutme-content {
   margin: 1rem;
 }
 
-body .about-image {
+.about-image {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
 
-body .about-image {
+.about-image {
   background-image: url(https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   background-size: cover;
   background-position: center;
@@ -162,13 +177,13 @@ body .about-image {
   margin: 1rem;
 }
 
-body * {
+* {
   font-family: Cormorant Garamond;
   font-size: 1rem;
   text-decoration: none;
 }
 
-body .blogs {
+.blogs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,10 +205,10 @@ body .blogs {
   min-height: 100vh;
 }
 
-body .blog {
+.blog {
   background-color: white;
   color: black;
-  border-radius: 5px;
+  border-radius: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +230,7 @@ body .blog {
   margin: 3rem 3rem;
 }
 
-body .cardcontent {
+.cardcontent {
   padding: 1rem;
   height: 100%;
   display: -webkit-box;
@@ -227,7 +242,7 @@ body .cardcontent {
           flex-direction: column;
 }
 
-body .card__image {
+.card__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
@@ -236,17 +251,17 @@ body .card__image {
   background-position: center;
 }
 
-body .card__title {
+.card__title {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
 }
 
-body .card__snippets {
+.card__snippets {
   margin: 7px 0;
 }
 
-body .card__readmore {
+.card__readmore {
   margin-top: auto;
   text-transform: uppercase;
   text-align: right;
@@ -255,12 +270,12 @@ body .card__readmore {
   transition: 5s ease-in-out;
 }
 
-body .blog:hover {
+.blog:hover {
   -webkit-transform: translateY(1rem) scale(1.3);
           transform: translateY(1rem) scale(1.3);
 }
 
-body .behind {
+.behind {
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -283,18 +298,18 @@ body .behind {
           transform-style: preserve-3d;
 }
 
-body #cards {
+#cards {
   display: -ms-grid;
   display: grid;
   place-items: center;
   min-height: 100vh;
 }
 
-body .card01 {
+.card01 {
   width: 400px;
 }
 
-body .card1__content {
+.card1__content {
   text-align: center;
   position: relative;
   padding: 7em;
@@ -309,8 +324,8 @@ body .card1__content {
           transform-style: preserve-3d;
 }
 
-body .card1__front,
-body .card1__back {
+.card1__front,
+.card1__back {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -329,23 +344,23 @@ body .card1__back {
       grid-template-rows: 1fr 0.3fr;
 }
 
-body .card01:hover .card1__content {
+.card01:hover .card1__content {
   -webkit-transform: rotateY(0.5turn);
           transform: rotateY(0.5turn);
 }
 
-body .card1__title {
+.card1__title {
   font-size: 3rem;
   -webkit-transform: translateZ(6rem);
           transform: translateZ(6rem);
 }
 
-body .Intro {
+.Intro {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-body .card1__back {
+.card1__back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   background: #333333;
@@ -354,7 +369,7 @@ body .card1__back {
           transform-style: preserve-3d;
 }
 
-body .card1__body {
+.card1__body {
   -webkit-transform: translateZ(3rem);
           transform: translateZ(3rem);
   -ms-grid-row: 1;
@@ -362,14 +377,14 @@ body .card1__body {
   grid-row: 1/2;
 }
 
-body .card1__front p {
+.card1__front p {
   -webkit-transform: translateZ(60px);
           transform: translateZ(60px);
 }
 
-body .card1__back img,
-body .card1__back img a,
-body p {
+.card1__back img,
+.card1__back img a,
+p {
   height: 30px;
   -webkit-transform: translateZ(3rem);
           transform: translateZ(3rem);
@@ -379,14 +394,59 @@ body p {
   grid-row: 2/3;
 }
 
-body #cards h1 {
+#cards h1 {
   font-size: 4rem;
 }
 
-body .icons img:hover {
+.icons img:hover {
   -webkit-box-shadow: rgba(32, 31, 31, 0.37);
           box-shadow: rgba(32, 31, 31, 0.37);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media (max-width: 702px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navlinks {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 8vh;
+    background-color: #041907;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: -webkit-transform 1s ease-in;
+    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  }
+  .navlinks li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .burger .line {
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+  }
 }
 /*# sourceMappingURL=pro3.css.map */
