@@ -19,6 +19,7 @@ body {
   position: relative;
   bottom: 51px;
   font-family: "Zen Dots", cursive;
+  text-align: center;
 }
 
 #landing {
@@ -447,6 +448,33 @@ p {
     height: 3px;
     width: 25px;
     margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (minmax(60vh, auto))[2];
+        grid-template-rows: repeat(2, minmax(60vh, auto));
+  }
+  .about-image {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .aboutme-content {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 }
 /*# sourceMappingURL=pro3.css.map */
