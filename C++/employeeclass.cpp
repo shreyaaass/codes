@@ -14,12 +14,19 @@ class Employee
 public:
     void store()
     {
+        cout << "Enter Age" << endl;
         cin >> eAge;
+        cout << "Enter Id" << endl;
         cin >> eId;
+        cout << "Enter Name" << endl;
         cin >> eName;
+        //cout << "Enter salary" << endl;
         //cin >> eSal;
+        cout << "Enter gender" << endl;
         cin >> eGen;
+        cout << "Enter designation" << endl;
         cin >> eDesig;
+        cout << "Enter year of joining" << endl;
         cin >> eYoJ;
     }
     void display()
