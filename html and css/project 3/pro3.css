@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   color: white;
@@ -54,6 +58,7 @@ body {
   background-color: black;
   padding: 10px;
   min-height: 8vh;
+  z-index: 1;
 }
 
 li,
