@@ -10,15 +10,17 @@
      fetchApi();
  } )
  async function fetchApi(){
-    const BUrl="https://api.spoonacular.com/recipes/complexSearch?query="+searchQ+"&apiKey=a8545f24592948b4b90fe021d8044041";
+    const BUrl=`https://api.spoonacular.com/recipes/complexSearch?query=${searchQ}&apiKey=a8545f24592948b4b90fe021d8044041`;
     const response = await fetch(BUrl)
     const data=await response.json();
-    // console.log(data)
-    genHTML(data.results)    
+    console.log(data)
+    genHTML(data)    
  }
  function genHTML(resu){
      let gendHTML="";
-    resu.map(result =>{
+     console.log(resu.totalResults)
+   if(resu.totalResults!=0) {
+    resu.results.map(result =>{
         gendHTML+=`
         <div class="card">
         <a href="" class="recipe"> 
@@ -31,7 +33,12 @@
             </a>
             </div>
     `
+        
         console.log(result)
     })
+}
+else{
+    gendHTML+=`<h1>NO RESULT FOUND!<\h1>`
+}
     result.innerHTML=gendHTML;
 }
