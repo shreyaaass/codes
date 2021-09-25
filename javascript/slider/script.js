@@ -1,0 +1,13 @@
+let track = document.querySelector(".car_track");
+let car = document.querySelector(".car");
+let left = document.querySelector(".button-left");
+let right = document.querySelector(".button-right");
+let slides = Array.from(track.children);
+dot_array = document.querySelector(".car_nav");
+// console.log(dot_array);
+dots = Array.from(dot_array.children);
+console.log(dots);
+let slideSize = slides[0].getBoundingClientRect().width;
+console.log(slideSize);
+slides[0].style.left = 0;
+slides[1].style.left = "`${slideSize}` + 'px'";
